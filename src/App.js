@@ -33,6 +33,7 @@ export default class App extends Component {
           />
           <Switch>
             <Route exact path="/NewsMonkey"> <News setProgress={this.setProgress} apiKey={this.apiKey}  key="general" pageSize={10} country="in" category="general" /></Route>
+            <Route exact path="/"> <News setProgress={this.setProgress} apiKey={this.apiKey}  key="general" pageSize={10} country="in" category="general" /></Route>
             <Route exact path="/business"> <News setProgress={this.setProgress} apiKey={this.apiKey}  key="business" pageSize={10} country="in" category="business" /></Route>
             <Route exact path="/entertainment"> <News setProgress={this.setProgress} apiKey={this.apiKey}  key="entertainment" pageSize={10} country="in" category="entertainment" /></Route>
             <Route exact path="/general"> <News setProgress={this.setProgress} apiKey={this.apiKey}  key="general" pageSize={10} country="in" category="general" /></Route>
